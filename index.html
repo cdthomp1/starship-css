@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Star Ship</title>
+    <style>
+        body {
+            background-color: rgb(94, 115, 235);
+        }
+
+        #triangle-up {
+            width: 5px;
+            height: 0;
+            border-left: 47.5px solid transparent;
+            border-right: 47.5px solid transparent;
+            border-bottom: 100px solid rgb(92, 92, 92);
+            border-top: 0px solid rgb(78, 78, 78);
+            border-radius: 100px 100px 1px 1px;
+            position: absolute;
+            left: 100px;
+            top: 7px;
+        }
+
+
+        #for-wing-left {
+            border-bottom: 54px solid rgb(109, 109, 109);
+            border-left: 0px solid transparent;
+            border-right: 43px solid transparent;
+            height: 0px;
+            width: 41px;
+            position: absolute;
+            top: 72px;
+            transform: rotate(-90deg);
+            left: 57px;
+        }
+
+        #for-wing-right {
+            border-bottom: 56px solid rgb(109, 109, 109);
+            border-left: 43px solid transparent;
+            border-right: 0px solid transparent;
+            height: 0px;
+            width: 41px;
+            position: absolute;
+            transform: rotate(90deg);
+            top: 71px;
+            left: 161px;
+        }
+
+
+
+        #aft-wing-left {
+            border-bottom: 45px solid rgb(109, 109, 109);
+            border-left: 0px solid transparent;
+            border-right: 70px solid transparent;
+            height: 0px;
+            width: 41px;
+            position: absolute;
+            top: 355px;
+            transform: rotate(-90deg);
+            left: 22px;
+        }
+
+        #aft-wing-right {
+            border-bottom: 45px solid rgb(109, 109, 109);
+            border-left: 70px solid transparent;
+            border-right: 0px solid transparent;
+            height: 0px;
+            width: 41px;
+            position: absolute;
+            transform: rotate(90deg);
+            top: 354px;
+            left: 166px;
+        }
+
+
+        #rectangle {
+            width: 100px;
+            height: 325px;
+            background: rgb(92, 92, 92);
+            position: absolute;
+            top: 108px;
+            left: 100px;
+
+        }
+
+
+        .flame-container {
+            margin: 80px auto;
+            position: absolute;
+            left: 181px;
+            top: 379px;
+            transform: rotate(180deg);
+        }
+
+        .flame {
+            bottom: 0;
+            position: absolute;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-top-left-radius: 50%;
+            transform: rotate(-45deg) scale(1.5, 1.5);
+        }
+
+        .yellow {
+            left: 15px;
+            width: 30px;
+            height: 30px;
+            background: gold;
+            box-shadow: 0px 0px 9px 4px gold;
+
+        }
+
+        .orange {
+            left: 10px;
+            width: 40px;
+            height: 40px;
+            background: orange;
+            box-shadow: 0px 0px 9px 4px orange;
+        }
+
+        .red {
+            left: 5px;
+            width: 50px;
+            height: 50px;
+            background: OrangeRed;
+            box-shadow: 0px 0px 5px 4px OrangeRed;
+        }
+
+        .white {
+            left: 15px;
+            bottom: -4px;
+            width: 30px;
+            height: 30px;
+            background: white;
+            box-shadow: 0px 0px 9px 4px white;
+        }
+    </style>
+</head>
+
+<body>
+        <div id="for-wing-left"></div>
+        <div id="for-wing-right"></div>
+        <div id="triangle-up"></div>
+        <div id="rectangle"></div>
+        <div id="aft-wing-left"></div>
+        <div id="aft-wing-right"></div>
+        <div class="flame-container">
+            <div class="red flame"></div>
+            <div class="orange flame"></div>
+            <div class="yellow flame"></div>
+            <div class="white flame"></div>
+            <div class="blue circle"></div>
+            <div class="black circle"></div>
+        </div>
+</body>
+
+</html>
